@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    padding: 0;
+    /* doubt */
+    box-sizing: border-box;
+}
+
+html{
+  background-color: #fff;
+  color: #393939;
+  font-weight: 300;
+  font-size: 20px;
+  /* doubt */
+  text-rendering: optimizeLegibility;
+}
+
+header{
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(bg.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;  
+  background-attachment: fixed;
+}
+.header{
+  max-width: 1140px;
+  margin: 0 auto;
+  
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-top: 10px;
+
+}
+.navbar{
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+ }
+ .navbar li{
+  display: inline-block;
+  margin-left: 40px;
+ }
+
+ .navbar li a:link,
+ .navbar li a:visited{
+  padding:8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+ }
+
+ .navbar li a:hover,
+ .navbar li a:active{
+  border-bottom: 2px solid #d87a0c;
+ }
+
+   
+ .home-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1140px;
+  transform: translate(-50%,-50%);
+}
+
+.home-text span{
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+ button {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #e67e22 ;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 60;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #e67e22;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+  button:hover {
+    background: #e67e22 ;
+    box-shadow: 0 0 30px 5px rgb(236, 153, 0);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    color: #fff;
+  }
+  
+  button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+
+  
